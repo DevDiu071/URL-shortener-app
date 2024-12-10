@@ -1,16 +1,14 @@
 import ShortenOutput from "./ShortenOutput";
 
 interface StatsProps {
-  // isCopied: boolean;
-  // copyText: string;
-  // handleCopy: () => Promise<void>;
+  copyText: string;
   urlOutPut: {
     url: string;
     shortenUrl: string;
   }[];
 }
 
-function Statistics({ handleCopy, isCopied, urlOutPut, copyText }: StatsProps) {
+function Statistics({ urlOutPut, copyText }: StatsProps) {
   return (
     <div>
       <div className="px-5 tablet:px-10 laptop:px-[50px] desktop:px-[90px] pt-[65px] bg-slate-100 pb-[70px]">
