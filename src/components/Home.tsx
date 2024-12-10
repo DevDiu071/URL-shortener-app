@@ -21,7 +21,7 @@ function Home() {
         alt="illustratino working"
         className="mt-10 ml-10 mb-10 tablet:order-2 desktop:overflow-x-hidden desktop:-mr-[340px] hidden desktop:block tablet:-mr-10"
       />
-      <div className="tablet:order-1 ml-8">
+      <div className="tablet:order-1">
         <h1 className="text-4xl font-bold desktop:text-6xl text-center tablet:text-left my-4 tablet:text-4xl tablet:my-2">
           More than just shorter links
         </h1>
