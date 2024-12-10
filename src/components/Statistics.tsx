@@ -1,13 +1,29 @@
 import ShortenOutput from "./ShortenOutput";
 
-function Statistics() {
+interface StatsProps {
+  // isCopied: boolean;
+  // copyText: string;
+  // handleCopy: () => Promise<void>;
+  urlOutPut: {
+    url: string;
+    shortenUrl: string;
+  }[];
+}
+
+function Statistics({ handleCopy, isCopied, urlOutPut, copyText }: StatsProps) {
   return (
     <div>
       <div className="px-5 tablet:px-10 laptop:px-[50px] desktop:px-[90px] pt-[65px] bg-slate-100 pb-[70px]">
         <div className="mt-10">
-          <ShortenOutput />
-          <ShortenOutput />
-          <ShortenOutput />
+          {urlOutPut.map((output) => (
+            <ShortenOutput
+              key={Math.random()}
+              urlOutPut={output}
+              // handleCopy={handleCopy}
+              // isCopied={isCopied}
+              copyText={copyText}
+            />
+          ))}
         </div>
         <h2 className="text-3xl font-bold text-center pt-[150px] mb-4">
           Advanced Statistics
@@ -24,7 +40,7 @@ function Statistics() {
             <img
               src="/images/icon-brand-recognition.svg"
               alt="icon"
-              className="mb-6 w-[80px] h-[80px] bg-darkgrayblue p-4 tablet:p-3 rounded-full absolute -top-10 tablet:-top-6 right-0 left-0 tablet:-left-[150px] m-auto"
+              className="mb-6 sm:w-[50px] sm:h-[50px]  w-[80px] h-[80px] bg-darkgrayblue p-4 tablet:p-3 rounded-full absolute -top-10 tablet:-top-6 right-0 left-0 tablet:-left-[150px] m-auto"
             />
             <p className="text-2xl font-bold tablet:text-left my-4 tablet:my-0  text-darkgrayblue tablet:text-xl">
               Brand Recognition
@@ -40,7 +56,7 @@ function Statistics() {
             <img
               src="/images/icon-detailed-records.svg"
               alt="icon"
-              className="mb-6 w-[80px] h-[80px] tablet:p-3 bg-darkgrayblue p-4 rounded-full absolute -top-10 tablet:-left-[150px] tablet:-top-6 right-0 left-0 m-auto"
+              className="mb-6 sm:w-[50px] sm:h-[50px] w-[80px] h-[80px] tablet:p-3 bg-darkgrayblue p-4 rounded-full absolute -top-10 tablet:-left-[150px] tablet:-top-6 right-0 left-0 m-auto"
             />
             <p className="text-3xl font-bold text-center text-darkgrayblue tablet:my-0  my-4 tablet:text-left mb-4 tablet:text-xl">
               Detailed Records
@@ -55,7 +71,7 @@ function Statistics() {
             <img
               src="/images/icon-fully-customizable.svg"
               alt="icon"
-              className="mb-6 w-[80px] h-[80px] tablet:p-3 bg-darkgrayblue p-4 rounded-full absolute -top-10 tablet:-left-[150px] tablet:-top-6 right-0 left-0 m-auto"
+              className="mb-6 sm:w-[50px] sm:h-[50px] w-[80px] h-[80px] tablet:p-3 bg-darkgrayblue p-4 rounded-full absolute -top-10 tablet:-left-[150px] tablet:-top-6 right-0 left-0 m-auto"
             />
             <p className="text-3xl tablet:text-left text-darkgrayblue font-bold text-center my-4 tablet:my-0  mb-4 tablet:text-xl">
               Fully Customizable

@@ -1,29 +1,28 @@
 function Home() {
   return (
-    <div className="mx-5 tablet:mx-10 laptop:mx-[60px] desktop:mx-[90px] flex flex-col tablet:flex-row tablet:mt-[30px] desktop:gap-x-10 items-center">
+    <div className="mx-5 tablet:mx-10 laptop:mx-[60px] desktop:mx-[90px] flex flex-col tablet:flex-row tablet:mt-[30px] desktop:gap-x-10 items-center laptop:mb-[100px]">
       <img
         src="/images/illustration-working.svg"
-        width={600}
-        height={300}
+        width={700}
         alt="illustratino working"
-        className="mt-10 ml-10 mb-10 tablet:order-2 tablet:hidden"
+        className="mt-10 ml-10 mb-10 tablet:order-2 tablet:hidden mr-0"
       />
       <img
         src="/images/illustration-working.svg"
-        width={370}
-        height={180}
+        width={500}
+        height={200}
         alt="illustratino working"
-        className="mt-10 ml-10 mb-10 tablet:order-2 hidden desktop:hidden tablet:block tablet:-mr-10"
+        className="mt-10 ml-10 mb-10 tablet:order-2 hidden desktop:hidden tablet:block tablet:-mr-[200px]"
       />
       <img
         src="/images/illustration-working.svg"
-        width={650}
+        width={1000}
         height={350}
         alt="illustratino working"
-        className="mt-10 ml-10 mb-10 tablet:order-2 desktop:overflow-x-hidden desktop:-mr-[140px] hidden desktop:block tablet:-mr-10"
+        className="mt-10 ml-10 mb-10 tablet:order-2 desktop:overflow-x-hidden desktop:-mr-[340px] hidden desktop:block tablet:-mr-10"
       />
-      <div className="tablet:order-1">
-        <h1 className="text-5xl font-bold desktop:text-5xl text-center tablet:text-left my-4 tablet:text-3xl tablet:my-2">
+      <div className="tablet:order-1 ml-8">
+        <h1 className="text-4xl font-bold desktop:text-6xl text-center tablet:text-left my-4 tablet:text-4xl tablet:my-2">
           More than just shorter links
         </h1>
         <p className="text-xl text-center tablet:text-left mt-4 tablet:text-sm tablet:mt-1">
