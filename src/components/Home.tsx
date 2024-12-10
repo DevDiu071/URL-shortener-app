@@ -16,7 +16,7 @@ function Home() {
       />
       <img
         src="/images/illustration-working.svg"
-        width={1000}
+        width={1200}
         height={350}
         alt="illustratino working"
         className="mt-10 ml-10 mb-10 tablet:order-2 desktop:overflow-x-hidden desktop:-mr-[340px] hidden desktop:block tablet:-mr-10"
