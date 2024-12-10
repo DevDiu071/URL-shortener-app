@@ -1,26 +1,19 @@
 import ShortenOutput from "./ShortenOutput";
 
 interface StatsProps {
-  copyText: string;
   urlOutPut: {
     url: string;
     shortenUrl: string;
   }[];
 }
 
-function Statistics({ urlOutPut, copyText }: StatsProps) {
+function Statistics({ urlOutPut }: StatsProps) {
   return (
     <div>
       <div className="px-5 tablet:px-10 laptop:px-[50px] desktop:px-[90px] pt-[65px] bg-slate-100 pb-[70px]">
         <div className="mt-10">
           {urlOutPut.map((output) => (
-            <ShortenOutput
-              key={Math.random()}
-              urlOutPut={output}
-              // handleCopy={handleCopy}
-              // isCopied={isCopied}
-              copyText={copyText}
-            />
+            <ShortenOutput key={Math.random()} urlOutPut={output} />
           ))}
         </div>
         <h2 className="text-3xl font-bold text-center pt-[150px] mb-4">

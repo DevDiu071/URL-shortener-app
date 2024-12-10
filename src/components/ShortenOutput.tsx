@@ -2,7 +2,6 @@ import clsx from "clsx";
 import { useState } from "react";
 
 interface ShortenOutPutProps {
-  copyText: string;
   urlOutPut: {
     url: string;
     shortenUrl: string;
